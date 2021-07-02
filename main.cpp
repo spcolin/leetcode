@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <cstdint>
 
-#include "p1420.h"
+#include "p1395.h"
 
 using namespace std;
 
@@ -15,13 +15,13 @@ int main() {
 
 
    //test();
-    Solution_p1420 p;
+    Solution_p1395 p;
 
     vector<vector<int>> a={{-48}};
-    vector<int> b={1,2,3,4,5,100};
+    vector<int> b={1,2,3,4};
     vector<int> c={1};
 
-    auto rst=p.numOfArrays(37,17,7);
+    auto rst=p.numTeams(b);
 
 
     cout<<rst;
