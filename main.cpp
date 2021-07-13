@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <cstdint>
 
-#include "p1395.h"
+#include "p1387.h"
 
 using namespace std;
 
@@ -15,16 +15,16 @@ int main() {
 
 
    //test();
-    Solution_p1395 p;
+    Solution_p1387 p;
 
     vector<vector<int>> a={{-48}};
     vector<int> b={1,2,3,4};
     vector<int> c={1};
 
-    auto rst=p.numTeams(b);
+    auto rst=p.getKth(10,20,5);
 
 
-    cout<<rst;
+//    cout<<rst;
 
 
     return 0;
