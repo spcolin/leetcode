@@ -43,7 +43,7 @@ int Solution_p1387::transToOne(int num, map<int, int> &ref) {
         ++step;
     }
 
-    for(int i=0;i<tmp.size()-1;++i)
+    for(int i=0;i<static_cast<int>(tmp.size())-1;++i)
     {
         ref[tmp[i]]=step-i;
     }
@@ -54,7 +54,7 @@ int Solution_p1387::transToOne(int num, map<int, int> &ref) {
 int Solution_p1387::getKth(int lo, int hi, int k) {
 
     map<int,int> ref;
-    ref[1]=1;
+    ref[1]=0;
     vector<vector<int>> rst;
 
     for(int i=lo;i<=hi;++i)
@@ -64,12 +64,12 @@ int Solution_p1387::getKth(int lo, int hi, int k) {
 
     sort(rst.begin(),rst.end(), cmp);
 
-    for(int i=0;i<rst.size();++i)
-    {
-        cout<<rst[i][0]<<"---"<<rst[i][1]<<endl;
-    }
+//    for(int i=0;i<rst.size();++i)
+//    {
+//        cout<<rst[i][0]<<"---"<<rst[i][1]<<endl;
+//    }
 
-    return rst[k-1][1];
+    return rst[k-1][0];
 
 
 }

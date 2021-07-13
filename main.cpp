@@ -21,10 +21,10 @@ int main() {
     vector<int> b={1,2,3,4};
     vector<int> c={1};
 
-    auto rst=p.getKth(10,20,5);
+    auto rst=p.getKth(1,1000,777);
 
 
-//    cout<<rst;
+    cout<<rst;
 
 
     return 0;
